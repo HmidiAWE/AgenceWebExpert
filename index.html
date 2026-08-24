@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilyes Ben Ahmed — Création de sites web & Cartes NFC Google Avis</title>
+<meta name="description" content="Création de sites vitrines sur-mesure et cartes NFC Google Avis pour booster votre e-réputation. Étudiant en BTS SIO.">
+
+<!-- Polices Google Fonts : Space Grotesk (titres) + Inter (texte) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== HEADER / NAVIGATION ==================== -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a href="#top" class="logo">
+      <span class="logo__mark">AWE</span>
+      <span class="logo__text">Agence.Web<strong>.Expert</strong></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#top">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#nfc">Cartes NFC</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--accent header__cta">Me contacter</a>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Étudiant en BTS SIO · Web & Digital</span>
+        <h1 class="hero__title">
+          Je conçois des sites qui convainquent, <span class="text-accent">et je fais parler vos clients satisfaits.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Sites vitrines sur-mesure, rapides et sur-mesure — associés à une carte NFC qui transforme
+          chaque client content en avis Google en un seul geste. Simple, redoutablement efficace, accessible dès 20 ans d'expertise pratique.
+        </p>
+        <div class="hero__actions">
+          <a href="#nfc" class="btn btn--accent">Découvrir la carte NFC</a>
+          <a href="#realisations" class="btn btn--ghost">Voir mes réalisations</a>
+        </div>
+
+        <div class="hero__stats">
+          <div><strong>&lt; 50€</strong><span>la carte NFC Google</span></div>
+          <div><strong>0</strong><span>application à installer</span></div>
+          <div><strong>3</strong><span>sites livrés en exemple</span></div>
+        </div>
+      </div>
+
+      <!-- Élément signature : animation du "tap" NFC déclenchant un avis 5 étoiles -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="tap-scene">
+          <div class="tap-scene__ring ring1"></div>
+          <div class="tap-scene__ring ring2"></div>
+          <div class="tap-scene__ring ring3"></div>
+
+          <div class="tap-scene__card">
+            <span class="tap-scene__card-label">Avis Google</span>
+            <svg viewBox="0 0 24 24" class="nfc-icon"><path d="M6 8a6 6 0 0 1 12 0M8.5 10.2a3 3 0 0 1 7 0M12 12v6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+          </div>
+
+          <div class="tap-scene__phone">
+            <div class="tap-scene__phone-screen">
+              <div class="tap-scene__stars">★★★★★</div>
+              <span class="tap-scene__msg">Avis publié !</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <span class="eyebrow">Ce que je propose</span>
+      <h2 class="section__title">Deux leviers pour votre présence en ligne</h2>
+      <p class="section__lead">
+        Un site qui donne confiance, et un outil qui transforme cette confiance en avis visibles.
+        Les deux ensemble, c'est une entreprise qui inspire davantage et se démarque localement.
+      </p>
+
+      <div class="services-grid">
+        <!-- Carte Service : Sites Web -->
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M4 9h16M8 4v0" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Création de sites vitrines</h3>
+          <p>
+            Des sites rapides, responsives et pensés pour convertir : cabinets, artisans, indépendants,
+            PME. Design sur-mesure, hébergement clarifié, référencement de base inclus — pas de thème
+            générique recyclé.
+          </p>
+          <ul class="service-card__list">
+            <li>Design 100% personnalisé à votre image</li>
+            <li>Optimisé mobile, tablette et desktop</li>
+            <li>Livraison rapide et accompagnement</li>
+          </ul>
+          <a href="#realisations" class="link-arrow">Voir des exemples concrets →</a>
+        </article>
+
+        <!-- Carte Service : NFC (mise en avant) -->
+        <article class="service-card service-card--highlight" id="nfc">
+          <span class="badge-price">Moins de 50€</span>
+          <div class="service-card__icon service-card__icon--accent">
+            <svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0M8.5 10.2a3 3 0 0 1 7 0M12 12v6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <h3>La carte NFC Google Avis</h3>
+          <p>
+        Tout le monde passe par Internet et Google pour découvrir de nouveaux lieux et lit les avis en premier.
+        Une entreprise avec beaucoup d'avis positifs et récents inspire confiance et attire les clients, 
+        tandis qu'une note basse ou trop peu d'avis les fait fuir vers la concurrence.
+
+          </p>
+
+          <ol class="steps">
+            <li><span class="steps__num">01</span><div><strong>Le client tape la carte</strong><p>Avec son smartphone, aucune app requise.</p></div></li>
+            <li><span class="steps__num">02</span><div><strong>La page Avis s'ouvre</strong><p>Redirection immédiate vers votre fiche Google.</p></div></li>
+            <li><span class="steps__num">03</span><div><strong>L'avis est déposé</strong><p>En moins de 15 secondes, sans effort.</p></div></li>
+          </ol>
+
+          <div class="benefits">
+            <p><strong>Pourquoi ça change tout :</strong></p>
+            <ul class="service-card__list service-card__list--check">
+              <li>Vos clients satisfaits oublient de laisser un avis — la carte supprime cette friction</li>
+              <li>Renforce votre référencement local (SEO Google Maps)</li>
+              <li>Crédibilise votre entreprise instantanément, à moindre coût</li>
+              <li>Utilisable en boutique, en caisse, sur un comptoir ou en rendez-vous</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn--accent btn--block">Commander ma carte NFC</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RÉALISATIONS ==================== -->
+  <section class="section section--alt" id="realisations">
+    <div class="container">
+      <span class="eyebrow">Portfolio</span>
+      <h2 class="section__title">Des sites livrés, en ligne, qui travaillent pour leurs clients</h2>
+      <p class="section__lead">Quelques réalisations récentes — cliquez pour les visiter.</p>
+
+      <div class="projects-grid">
+        <a href="https://drh.partners" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card__preview preview--1">
+            <span>DRH Partners</span>
+          </div>
+          <div class="project-card__body">
+            <h3>drh.partners</h3>
+            <p>Site vitrine corporate pour cabinet de conseil RH.</p>
+            <span class="link-arrow">Visiter le site →</span>
+          </div>
+        </a>
+
+        <a href="https://jassureassurances.com" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card__preview preview--2">
+            <span>J'Assure Assurances</span>
+          </div>
+          <div class="project-card__body">
+            <h3>jassureassurances.com</h3>
+            <p>Vitrine claire et rassurante pour un courtier en assurances.</p>
+            <span class="link-arrow">Visiter le site →</span>
+          </div>
+        </a>
+
+        <a href="https://cavertonpartners.fr" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card__preview preview--3">
+            <span>Caverton Partners</span>
+          </div>
+          <div class="project-card__body">
+            <h3>cavertonpartners.fr</h3>
+            <p>Identité web sobre et professionnelle pour un cabinet partenaire.</p>
+            <span class="link-arrow">Visiter le site →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <div class="contact__info">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section__title">Discutons de votre projet</h2>
+        <p class="section__lead">
+          Un site à créer, une carte NFC à commander, ou simplement une question ? Je réponds rapidement.
+        </p>
+
+        <div class="contact__item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.65 2.65a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.43-1.22a2 2 0 0 1 2.11-.45c.86.31 1.75.53 2.65.65A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><span>Téléphone</span><a href="tel:+33749561025">+33 7 49 56 10 25</a></div>
+        </div>
+
+        <div class="contact__item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><span>Email</span><a href="mailto:agence.web.expert@gmail.com">agence.web.expert@gmail.com</a></div>
+        </div>
+      </div>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="logo__text">AgenceWeb<strong>.Expert</strong></span>
+      <p>Création de sites web & cartes NFC Google Avis </p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigation</h4>
+      <a href="#services">Services</a>
+      <a href="#nfc">Cartes NFC</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#apropos">À propos</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="tel:+33749561025">+33 7 49 56 10 25</a>
+      <a href="mailto:agence.web.expert@gmail.com">agence.web.expert@gmail.com</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Mentions légales</h4>
+      <p class="footer__legal">
+        Site édité à titre professionnel dans le cadre d'une activité de prestation web.
+        <br>AGENCE WEB EXPERT
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+<script>
+  // Année dynamique dans le footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Menu mobile
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('nav--open');
+    burger.classList.toggle('burger--open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav--open');
+      burger.classList.remove('burger--open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  
+</script>
+
+</body>
+</html>
